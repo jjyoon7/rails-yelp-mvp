@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Restaurant.delete_all
+Restaurant.create!( name: "ocha", address: "zeburgerdijk", phone: "0614619283", category: "thai")
+Restaurant.create!( name: "hakata", address: "rai", phone: "0615243536", category: "ramen")
+Restaurant.create!( name: "rijsel", address: "wibaustraat", phone: "0615423787", category: "french")

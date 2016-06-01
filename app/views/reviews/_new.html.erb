@@ -1,0 +1,9 @@
+<%= form_for @review, :url => restaurant_reviews_path(@restaurant.id) do |f| %>
+<%= f.label :content %>
+<%= f.text_field :content %>
+
+<%= f.label :rating %>
+<%= f.text_field :rating %>
+
+<%= f.submit "add a review" %>
+<% end %>
